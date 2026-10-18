@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="80%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow3" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134e4a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c0519" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="streamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(6px); }
+      }
+      @keyframes flowDash {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes rnnLoop {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 4px; opacity: 0.5; }
+        50% { r: 6.5px; opacity: 1; }
+      }
+
+      .pulse-bg { animation: pulseGlow 8s ease-in-out infinite alternate; transform-origin: center; }
+      .float-card-1 { animation: floatSlow 5s ease-in-out infinite; }
+      .float-card-2 { animation: floatReverse 6s ease-in-out infinite; }
+      .float-card-3 { animation: floatSlow 5.5s ease-in-out infinite 1s; }
+      .data-stream { stroke-dasharray: 20, 10; animation: flowDash 12s linear infinite; }
+      .rnn-circuit { stroke-dasharray: 12, 6; animation: rnnLoop 4s linear infinite; }
+      .node-pulse-1 { animation: nodePulse 2.5s ease-in-out infinite; }
+      .node-pulse-2 { animation: nodePulse 3.2s ease-in-out infinite 0.8s; }
+      .node-pulse-3 { animation: nodePulse 2.8s ease-in-out infinite 1.5s; }
+      .node-pulse-4 { animation: nodePulse 3.5s ease-in-out infinite 2s; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="380" rx="16" fill="#090d16"/>
+  <rect width="1200" height="380" rx="16" fill="url(#bgGlow1)" class="pulse-bg"/>
+  <rect width="1200" height="380" rx="16" fill="url(#bgGlow2)" class="pulse-bg"/>
+  <rect width="1200" height="380" rx="16" fill="url(#bgGlow3)"/>
+
+  <!-- Subtle Neural Grid Pattern -->
+  <g opacity="0.12" stroke="#6366f1" stroke-width="0.8">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="380"/>
+    <line x1="300" y1="0" x2="300" y2="380"/>
+    <line x1="450" y1="0" x2="450" y2="380"/>
+    <line x1="600" y1="0" x2="600" y2="380"/>
+    <line x1="750" y1="0" x2="750" y2="380"/>
+    <line x1="900" y1="0" x2="900" y2="380"/>
+    <line x1="1050" y1="0" x2="1050" y2="380"/>
+  </g>
+
+  <!-- Animated Neural Flows & Attention Rays (Background Dynamics) -->
+  <g opacity="0.45">
+    <!-- Attention Connection Waves -->
+    <path d="M 50,330 C 250,220 350,340 550,250 C 750,160 850,270 1150,190" fill="none" stroke="url(#streamGrad1)" stroke-width="2.5" class="data-stream"/>
+    <path d="M 80,70 C 280,180 400,60 620,130 C 840,200 960,110 1140,290" fill="none" stroke="url(#streamGrad1)" stroke-width="2" class="data-stream"/>
+    
+    <!-- Recurrent Feedback Cycles (RNN Loops) -->
+    <circle cx="110" cy="190" r="32" fill="none" stroke="#818cf8" stroke-width="1.8" class="rnn-circuit"/>
+    <path d="M 142,190 L 138,183 L 146,183 Z" fill="#818cf8"/>
+    
+    <circle cx="1090" cy="180" r="36" fill="none" stroke="#22d3ee" stroke-width="1.8" class="rnn-circuit"/>
+    <path d="M 1126,180 L 1122,173 L 1130,173 Z" fill="#22d3ee"/>
+  </g>
+
+  <!-- Pulsing Neural Nodes -->
+  <g fill="#38bdf8" filter="url(#glow)">
+    <circle cx="210" cy="95" class="node-pulse-1"/>
+    <circle cx="990" cy="105" class="node-pulse-2"/>
+    <circle cx="170" cy="285" class="node-pulse-3"/>
+    <circle cx="1030" cy="275" class="node-pulse-4"/>
+  </g>
+
+  <!-- Dynamic Decorative Feature Pills (Carefully placed so title remains completely clear) -->
+  <!-- Left Architecture Card -->
+  <g class="float-card-1" opacity="0.88">
+    <rect x="52" y="278" width="220" height="48" rx="24" fill="url(#cardGrad1)" stroke="#6366f1" stroke-width="1.2"/>
+    <circle cx="78" cy="302" r="6" fill="#a855f7"/>
+    <text x="96" y="307" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">⚡ O(1) Memory Inference</text>
+  </g>
+
+  <!-- Center-Right Architecture Card -->
+  <g class="float-card-2" opacity="0.88">
+    <rect x="928" y="278" width="220" height="48" rx="24" fill="url(#cardGrad2)" stroke="#14b8a6" stroke-width="1.2"/>
+    <circle cx="954" cy="302" r="6" fill="#2dd4bf"/>
+    <text x="972" y="307" fill="#ccfbf1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🔄 Linear Attention &amp; SSM</text>
+  </g>
+
+  <!-- Upper Right Subtle Pill -->
+  <g class="float-card-3" opacity="0.82">
+    <rect x="948" y="44" width="200" height="38" rx="19" fill="url(#cardGrad3)" stroke="#f43f5e" stroke-width="1.1"/>
+    <circle cx="970" cy="63" r="5" fill="#fb7185"/>
+    <text x="986" y="68" fill="#ffe4e6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🧩 Hybrid MoE Models</text>
+  </g>
+
+  <!-- FOREGROUND BRANDING CONTENT (Guaranteed highest z-index & crystal clear legibility) -->
+  <g id="foreground-content">
+    <!-- Category Micro Tag -->
+    <rect x="495" y="52" width="210" height="30" rx="15" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2" opacity="0.95"/>
+    <text x="600" y="72" text-anchor="middle" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.8">TOP AI ARCHITECTURES</text>
+
+    <!-- Main Title -->
+    <text x="600" y="152" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.8))">Awesome RNN &amp; Transformer</text>
+    
+    <text x="600" y="202" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#f8fafc" letter-spacing="-0.3" filter="drop-shadow(0 3px 10px rgba(0,0,0,0.7))">Architectures Ecosystem</text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="248" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="500" letter-spacing="0.2">Curated Guide to Attention-Free Recurrence, State Space Models (Mamba, RWKV), Hybrid MoE &amp; Long-Context LLMs</text>
+  </g>
+
+  <!-- Border Outline -->
+  <rect x="1" y="1" width="1198" height="378" rx="15" fill="none" stroke="#334155" stroke-width="1.2" opacity="0.6"/>
+</svg>
