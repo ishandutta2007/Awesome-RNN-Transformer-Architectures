@@ -2,7 +2,7 @@
 
 # Awesome-RNN-Transformer-Architectures
 
-# Top RNN & Transformer Architectures Ecosystem
+## Top RNN & Transformer Architectures Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Attention-Free Recurrence, Hybrid MoE Designs & Long-Context Generalization*  
