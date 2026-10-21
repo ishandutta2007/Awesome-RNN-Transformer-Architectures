@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutaa2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-RNN-Transformer-Architectures/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-RNN-Transformer-Architectures?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-RNN-Transformer-Architectures/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-RNN-Transformer-Architectures?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-RNN-Transformer-Architectures/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-RNN-Transformer-Architectures?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-RNN-Transformer-Architectures/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-RNN-Transformer-Architectures?style=flat-square&color=green" alt="License" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-RNN-Transformer-Architectures/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
@@ -69,9 +69,9 @@ The table below compiles leading hosted and API-accessible foundation model plat
 
 ## 💻 Open-Source Repositories &amp; Implementations
 
-The table below catalogs premier open-source repositories implementing RNNs, Transformers, State Space Models (SSMs), and hybrid architectures, **sorted in descending order by GitHub Stars**:
+The table below catalogs premier open-source repositories implementing RNNs, Transformers, State Space Models (SSMs), and hybrid architectures, **sorted in descending order by GitHub_Stars**:
 
-| 📦 Repository &amp; Architecture | 🌟 GitHub Stars Badge | 📜 License | 🛠️ Core Technology &amp; Architectural Significance |
+| 📦 Repository &amp; Architecture | 🌟 GitHub_Stars_Badge | 📜 License | 🛠️ Core Technology &amp; Architectural Significance |
 | :--- | :--- | :--- | :--- |
 | **[Transformers (Hugging Face)](https://github.com/huggingface/transformers)** | [![Stars](https://img.shields.io/github/stars/huggingface/transformers?style=social&color=white)](https://github.com/huggingface/transformers/stargazers) | Apache-2.0 | The worldwide standard library for state-of-the-art Transformer and sequence models. Unifies PyTorch, TensorFlow, and JAX with seamless model hub access. |
 | **[llama.cpp](https://github.com/ggerganov/llama.cpp)** | [![Stars](https://img.shields.io/github/stars/ggerganov/llama.cpp?style=social&color=white)](https://github.com/ggerganov/llama.cpp/stargazers) | MIT | Pure C/C++ inference engine for Transformer architectures. Pioneered GGUF quantization, Apple Silicon Metal acceleration, and zero-dependency local LLM deployment. |
@@ -123,7 +123,7 @@ We actively welcome community contributions! To add a new model, benchmark, or f
 
 1. 🍴 **Fork the Repository** on GitHub.
 2. 🌿 **Create a Feature Branch** (`git checkout -b feature/add-new-architecture`).
-3. 📝 **Add Your Entry** in `README.md` maintaining table formatting, verified pricing/limits, and correct GitHub star badges.
+3. 📝 **Add Your Entry** in `README.md` maintaining table formatting, verified pricing/limits, and correct GitHub Stars_Badges.
 4. 🧪 **Verify Hyperlinks & Markdown syntax**.
 5. 🚀 **Submit a Pull Request (PR)** with a concise rationale explaining the architectural relevance.
 
